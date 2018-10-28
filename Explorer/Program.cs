@@ -32,9 +32,16 @@ namespace ConsoleApp1
             while (true)
             {
                 int ChoosenNumber = int.Parse(Console.ReadLine()) - 1;
-                if (ChoosenNumber < drives.Length)
+                if (ChoosenNumber>=0 &&ChoosenNumber < drives.Length)
                 {
-                    return drives[ChoosenNumber].Name;
+                    if (drives[ChoosenNumber].IsReady)
+                    {
+                        return drives[ChoosenNumber].Name;
+                    }
+                    else
+                    {
+                        Console.WriteLine("this drive is not ready!");
+                    }
                 }
                 else
                 {
@@ -49,7 +56,7 @@ namespace ConsoleApp1
             DirectoryInfo[] SubDirectory = di.GetDirectories();
             for (int i = 0; i < SubDirectory.Length; i++)
             {
-                Console.WriteLine($"{i + 1}.{SubDirectory[i].Name}");
+                    Console.WriteLine($"{i + 1}.{SubDirectory[i].Name}");              
             }
             FileInfo[] fi = di.GetFiles();
             for (int i = SubDirectory.Length, j = 0; i < SubDirectory.Length + fi.Length; i++, j++)
@@ -72,10 +79,19 @@ namespace ConsoleApp1
                     var y = fi[x].DirectoryName;
                     Process.Start($"{y}/{fi[x].Name}");
                 }
-                //else if (ChoosenNumber == SubDirectory.Length + fi.Length)
-                //{
-                //    ShowSubDrives($"{SubDirectory[ChoosenNumber - 2].Parent}");
-                //}
+                else if (ChoosenNumber == SubDirectory.Length + fi.Length)
+                {
+                    DirectoryInfo parent = di.Parent;
+                    if (parent != null)
+                    {
+                        ShowSubDrives(parent.Name);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        ShowDrives();
+                    }
+                }
                 else
                 {
                     Console.WriteLine("Invalid Number Choose Another One:");
