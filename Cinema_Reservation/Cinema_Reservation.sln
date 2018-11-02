@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rtl_BsTheme", "..\..\ui\rtl_BsTheme\rtl_BsTheme.csproj", "{47F90DBD-CF2A-4C62-90C9-8A8B882559BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema_Reservation", "Cinema_Reservation\Cinema_Reservation.csproj", "{F281CE83-1EB6-4C4B-9121-E27210E499ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{47F90DBD-CF2A-4C62-90C9-8A8B882559BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47F90DBD-CF2A-4C62-90C9-8A8B882559BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47F90DBD-CF2A-4C62-90C9-8A8B882559BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47F90DBD-CF2A-4C62-90C9-8A8B882559BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F281CE83-1EB6-4C4B-9121-E27210E499ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F281CE83-1EB6-4C4B-9121-E27210E499ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F281CE83-1EB6-4C4B-9121-E27210E499ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F281CE83-1EB6-4C4B-9121-E27210E499ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {886B0E3B-B5F5-4826-B2C2-70A8D7D84A2E}
+		SolutionGuid = {FD72FB96-313E-4D09-B40E-B2662DD47DBE}
 	EndGlobalSection
 EndGlobal
